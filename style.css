@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: #8fb2dd93;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 14px;
+}
+.card-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    background: linear-gradient(to top, hsl(241, 81%, 47%), hsl(252, 100%, 67%) );
+    border-radius: 14px;
+}
+.card-1 h2{
+    margin-top: 20px;
+    font-size: 1.25rem; 
+    color: #fff;
+    opacity: 0.7;
+}
+.status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    color:#fff;
+    margin: 40px 0;
+    background: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0))
+}
+.card-1 #average{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.card-1 #total{
+    font-size: 0.875rem;
+    opacity: 0.5;
+    margin-top: -8px;
+}
+.card-1 h1{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.card-1 p{
+    color: #fff;
+    opacity: 0.7;
+    font-size: 0.875rem;
+    margin: 20px 0;
+}
+.card-2 h2{
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    gap: 1em;
+}
+@media (max-width: 425px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card-1, .card-2{
+        width: 100%;
+    }
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+    background-color: hsl(0, 33%, 40%);
+    height: 40px;
+    border-radius: 8px;
+}
+.box .row-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+.box .row-left span{
+    font-weight: bold;
+}
+.box .row-right{
+    margin-right: 10px;
+}
+.box:last-child{
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition:  all 0.3s ease-in-out;
+    background-color: rgb(50, 50, 84);
+}
+.box:last-child:hover{
+    cursor: pointer;
+    background: linear-gradient(to top, hsl(234, 77%, 48%), hsl(252, 100%, 67%) );
+}
